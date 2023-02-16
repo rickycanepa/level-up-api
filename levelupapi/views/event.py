@@ -15,7 +15,7 @@ class EventView(ViewSet):
         Returns:
             Response -- JSON serialized event
         """
-        event = event.objects.get(pk=pk)
+        event = Event.objects.get(pk=pk)
         serializer = EventSerializer(event)
         return Response(serializer.data)
 
@@ -30,7 +30,7 @@ class EventView(ViewSet):
         serializer = EventSerializer(events, many=True)
         return Response(serializer.data)
     
-class GameTypeSerializer(serializers.ModelSerializer):
+class EventSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
     class Meta:
