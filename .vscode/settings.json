@@ -3,7 +3,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
-        "--django-settings-module=levelup.settings",
+        "--django-settings-module=<levelup>.settings",
     ],
     
 }
