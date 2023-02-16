@@ -1,0 +1,14 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields": {
+            "gamer": 1,
+            "name": "Overwatch",
+            "description": "Hell on Earth",
+            "game_type": 1,
+            "min_player": 10,
+            "max_player": 10
+        }
+    }
+]
